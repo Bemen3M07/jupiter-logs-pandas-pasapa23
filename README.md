@@ -113,4 +113,57 @@ ReportLab és una llibreria Python dissenyada per generar documents PDF dinàmic
 - Automatització de la creació de PDFs: Ideal per crear informes automatitzats, factures, documents legals o qualsevol tipus de contingut en PDF de manera programàtica.
 ReportLab és molt utilitzat en la creació d'informes empresarials, facturació automàtica i generació de documents personalitzats a gran escala.
 
+Exercici 7:
+- Informe de la part de logging amb el codi que s’ha utilitzat i els exemples d’utilització i resultats:
+Configuració del logger:
+S'ha configurat el logger per enregistrar missatges de diferents nivells (INFO, WARNING, ERROR).
+El primer FileHandler guarda els logs d'informació en el fitxer info.log.
+El segon FileHandler captura els errors (nivell ERROR) i els desa al fitxer error.log.
+El StreamHandler es configura per mostrar els logs per pantalla (per consola).
+
+Funció principal:
+S'utilitza un bucle infinit amb l'iterador count(1) de la llibreria itertools, que genera números infinitament a partir de 1.
+Els missatges d'informació es registren mitjançant logger.info().
+S'utilitza un try-except per capturar una interrupció manual i enregistrar una advertència (logger.warning()).
+
+Resultats obtinguts:
+Els missatges es van enregistrar en el fitxer info.log i error.log, segons el nivell configurat.
+Els missatges també es van mostrar per consola durant l'execució.
+Els resultats mostrats a la consola eren similars als següents:
+"Missatge número 1: el programa segueix executant-se."
+"Missatge número 2: el programa segueix executant-se."
+"El programa va ser interromput manualment."
+
+
+Informe de la part del tractament de dades, que s’expliqui cada part que s’ha utilitzat així com les gràfiques que es mostren:
+Lectura de les dades:
+
+S'ha carregat el CSV amb les dades utilitzant pd.read_csv().
+Càlcul de la mitjana per alumne:
+
+S'ha afegit una nova columna Mitjana Alumne que calcula la mitjana de les notes de cada alumne en les matèries M01, M04, M03 i M05.
+Generació de gràfics:
+
+Gràfic de barres de la mitjana de cada alumne: Visualitza la mitjana de les notes de cada alumne.
+Gràfic de línia de la mitjana de tots els alumnes: Mostra l'evolució de les mitjanes per alumne.
+Gràfic de sectors (pastís): Indica els percentatges d'aprovats i suspesos.
+Gràfic de barres de les notes màximes i mínimes per matèria: Mostra les notes extremes per cada matèria.
+Exemples de Gràfics Generats:
+
+Gràfic de barres de la mitjana de cada alumne:
+
+Mostra un gràfic amb les barres de la mitjana de cada alumne.
+Gràfic de línia:
+
+Mostra una línia que connecta la mitjana de les notes dels alumnes.
+Gràfic de sectors (pastís):
+
+Visualitza la distribució d'aprovats i suspesos.
+Gràfic de barres de notes extremes per matèria:
+
+Representa les notes més altes i més baixes per cada matèria.
+Resultats:
+
+Els gràfics permeten veure de manera visual les dades dels alumnes, la seva distribució entre aprovats i suspesos, així com les notes més altes i més baixes per matèria.
+
 
